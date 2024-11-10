@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title><title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+</head>
+<body>
+<p class="md-typescale-body-medium">This is a CURsed Html</p>
+<p class="md-typescale-body-medium">This is a <bold>CURsed bold</bold> Html</p>
+<p class="md-typescale-body-medium">This is a <i>CURsed italic</i> Html</p>
+<p class="md-typescale-body-medium">This is a <u>CURsed underlined</u> Html</p>
+<p class="md-typescale-body-medium">This is a <del>CURsed deleted</del> Html</p>
+<p class="md-typescale-body-medium">This is a <big>CURsed BIG</big> Html</p>
+<p class="md-typescale-body-medium">This is a <small>CURsed small</small> Html</p>
+<p class="md-typescale-body-medium">This is a <sub>CURsed subscript</sub> Html</p>
+<p class="md-typescale-body-medium">This is a <sup>CURsed superscript</sup> Html</p>
+<p class="md-typescale-body-medium">This is a <tt>CURsed monospaced</tt> Html</p>
+<p class="md-typescale-body-medium">This is a <mark style="background-color: limegreen;">CURsed marked</mark> Html</p>
+</body>
+</html>

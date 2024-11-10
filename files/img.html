@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+        <script type="importmap">
+        {
+            "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+        </script>
+        <script type="module">
+            import '@material/web/all.js';
+            import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+            document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+        </script>
+
+        <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+
+    <script src="https://unpkg.com/@material/material-components-web@14.0.0/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@material/select/dist/mdc.select.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/list/dist/mdc.list.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/menu/dist/mdc.menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/select@14/dist/mdc.select.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/menu@14/dist/mdc.menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/list@14/dist/mdc.list.css">
+
+    <title>This will Learn A IMG</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<body>
+
+
+
+
+
+    <a href="https://tr.wikipedia.org/wiki/Elma">
+    <img src="Red_Apple.jpg" height="1080" width="1920" alt="This is an Apple s" title="we eat apples is pink and Dried">
+    </a>    
+</body>
+</html>

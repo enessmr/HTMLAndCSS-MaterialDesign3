@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>hexagon Force</title>
+        <link rel="stylesheet" href="M a r i g i n o.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+    </head>
+    <body>
+        <!-- M a r i g i n o  =  s p a c e  a r o u n d  a n  e l e m e n t -->
+
+        <div class="box" id="box1" class="md-typescale-body-medium">Box 1</div>
+        <div class="box" id="box2" class="md-typescale-body-medium">Box 2</div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+@font-face{
+    src: url(css\ fonts/ZZZTop.ttf);
+    font-family: ZZZTop;
+}
+@font-face{
+    src: url(css\ fonts/yours5.ttf);
+    font-family: yours5;
+}
+h1{
+    /* I excluded it because it owerwrites Noto Sans and Roboto fonts */
+}
+p{
+    font-size: 23px ;
+    font-weight: bold;
+    font-style: normal;
+}

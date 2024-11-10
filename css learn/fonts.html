@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML lang="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-witdh">
+        <title>Fonts</title>
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/css2?">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+    </head>
+    <body>
+        <h1 class="md-typescale-display-large">H1 text on css fonts.</h1>
+        <p class="md-typescale-body-medium">param text a</p>
+    </body>
+</HTML>

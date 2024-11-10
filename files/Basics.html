@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bruh</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+</head>
+
+<body>
+
+    <h1 class="md-typescale-display-large">This is my need-to-backup website</h1>
+    <md-divider></md-divider>
+    <h2 class="md-typescale-display-medium">I Like Pizza!!!!</h2>
+    <br>
+    <p class="md-typescale-body-large">I like Pizza!!!!!!</p>
+    <br>
+    <h3 class="md-typescale-headline-small">I Like Pizza!!!!</h3>
+    <br>
+    <h4 class="md-typescale-body-medium">I Like Pizza!!!!</h4>
+    <br>
+    <h5 class="md-typescale-body-small">I Like Pizza!!!!</h5>
+    <br>
+    <h6 class="md-typescale-body-small">I Like Pizza!!!!</h6>
+    <br>
+    <p class="md-typescale-body-medium">Siu</p>
+
+</body>
+
+</html>

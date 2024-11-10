@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>time machine</title>
+        <link rel="stylesheet" href="float.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+    </head>
+    <body>
+        <!-- float = allows other elemets to flow around it but mario style -->
+        <img src="files/Red_Apple.jpg" height="90px" width="90px" id="img1">
+
+        <p class="md-typescale-body-medium">"long text"</p>
+        <p class="md-typescale-body-medium">"long text"</p>
+
+        <img src="files/220px-Pears.jpg" height="100px" width="90px" id="img2">
+
+        <p class="md-typescale-body-medium">"long text"</p>
+        <p class="md-typescale-body-medium">"long text"</p>
+    </body>
+</html>

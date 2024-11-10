@@ -1,0 +1,14 @@
+
+
+h1{
+    border: 3px outset aqua;
+    border-width: 290px;
+    border-color:aqua;
+    border-radius: 10px;
+}
+p{
+    border-bottom: 3px solid blanchedalmond;
+    border-top: 3px solid darkred;
+    border-left: 3px dotted red;
+    border-right: 3px dotted greenyellow;
+}

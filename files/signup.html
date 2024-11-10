@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+        <script type="importmap">
+        {
+            "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+        </script>
+        <script type="module">
+            import '@material/web/all.js';
+            import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+            document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+        </script>
+
+        <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+
+    <script src="https://unpkg.com/@material/material-components-web@14.0.0/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@material/select/dist/mdc.select.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/list/dist/mdc.list.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/menu/dist/mdc.menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/select@14/dist/mdc.select.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/menu@14/dist/mdc.menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/list@14/dist/mdc.list.css">
+
+
+
+    <title><title></title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+
+        <md-filled-text-field label="Username" placeholder="abcd" id="username" minlength="4" maxlength="20" required>
+        </md-filled-text-field>
+
+       <!-- <label for="username">username: (ispy= wtf)</label>
+        <input type="text" id="username" placeholder="ispywithmylittleeyegd" minlength="4" maxlength="999" required> !-->
+
+
+      <!-- <label for="password">password</label>
+        <input type="password" id="password" minlength="8" maxlength="20" required><br> !-->
+
+      <md-filled-text-field label="Password" placeholder="123456" id="password" minlength="6" maxlength="30" required>
+        </md-filled-text-field>
+
+       <!-- <label for="email">email</label>
+        <input type="email" id="email" placeholder="example123@gmail.com"><br> !-->
+
+
+
+        <br>
+        <br>
+
+        <md-outlined-text-field label="Email" placeholder="example@example.com" id="email">
+        </md-outlined-text-field>
+
+       <!-- <label for="phone">phone</label>
+        <input type="tel" id="phone" placeholder="123+ 123-123-32-13"><br> !-->
+
+        <md-outlined-text-field label="Phone Number" placeholder="123+ 123-456-7890">
+        </md-outlined-text-field>
+
+        <br>
+        <br>
+
+<!--    <label for="bday">birthday:</label>
+        <input type="date" id="bday" required><br> !-->
+
+<!--    <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br> !-->
+
+
+        <md-outlined-text-field label="Quantity" type="number" id="quantity" min="0" max="99">
+        </md-outlined-text-field>
+
+        <br>
+        <br>
+
+        <h4 class="md-typescale-body-medium">Sorry birthday is not available.</h4>
+
+        <label for="title">title:</label>
+
+        <label for="Mr." class="md-typescale-body-medium">Mr.:</label>
+       <!-- <input type="radio" id="Mr." value="Mr." name="title"> !-->
+        <md-radio id="Mr." value="Mr." name="title"></md-radio>
+        <label for="Ms." class="md-typescale-body-medium">Ms.:</label>
+        <md-radio id="Ms." value="Ms." name="title"></md-radio>
+        <label for="PhD" class="md-typescale-body-medium">PhD.:</label>
+        <md-radio id="PhD." value="PhD." name="title"></md-radio><br><br>
+
+        <label for="payment" class="md-typescale-body-medium">payment:</label>
+       <!-- <select class="md-typescale-body-medium">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+            <option value="nopayment">no payment</option>
+        </select> !-->
+        <br>
+        <br>
+    <label for="visa" class="md-typescale-body-medium">Visa</label>
+    <md-radio name="payment" value="visa">Visa</md-radio>
+    <br>
+    <br>
+    <label for="mastercard" class="md-typescale-body-medium">Mastercard</label>
+    <md-radio name="payment" value="mastercard">Mastercard</md-radio>
+    <br>
+    <br>
+    <label for="giftcard" class="md-typescale-body-medium">Giftcard</label>
+    <md-radio name="payment" value="giftcard">Giftcard</md-radio>
+    <br>
+    <br>
+    <label for="nopayment" class="md-typescale-body-medium">No payment</label>
+    <md-radio name="payment" value="nopayment" checked>No Payment</md-radio>
+    <br>
+    <br>
+
+        <md-outlined-text-field label="why ure signing up" max="999">
+        </md-outlined-text-field>
+
+       <!-- <label for="comment">reason why ure signing up:</label>
+        <textarea id="comment" rows="3" cols="9999"></textarea> !-->
+
+
+       <!-- <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="9999"></textarea> !-->
+
+        <md-outlined-text-field label="comment" max="999">
+        </md-outlined-text-field>
+
+        <br>
+        <br>
+
+        <md-outlined-button>
+        Reset</md-outlined-button>
+        <md-filled-button>
+            Send
+            <svg slot="icon" viewBox="0 0 48 48"><path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z"/></svg>
+        </md-filled-button>
+    </form>
+
+    <script src="https://unpkg.com/@material/select@14/dist/mdc.select.js"></script>
+    <script src="https://unpkg.com/@material/menu@14/dist/mdc.menu.js"></script>
+    <script src="https://unpkg.com/@material/list@14/dist/mdc.list.js"></script>
+    <script src="https://unpkg.com/@material/select@14/dist/mdc.select.js"></script>
+    <script src="https://unpkg.com/@material/list@14/dist/mdc.list.js"></script>
+
+
+
+
+
+</body>
+</html>

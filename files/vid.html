@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>I hate this</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/web/dist/mdc-web.min.js"></script>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles && typescaleStyles.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+    <script type="module">
+        import {MDCDataTable} from '@material/data-table';
+        const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+    </script>
+</head>
+<body>
+    <!--.mp4 .webm .ogg-->
+    <p class="md-typescale-body-medium">Normal MP4.(Wiew HTML Editor. Key:F12)</p>
+    <video src="rain.mp4" width="700px" controls autoplay muted></video>
+    <p class="md-typescale-body-medium">Typed MP4.(Wiew HTML Editor. Key:F12)</p>
+    <video width="700px" controls autoplay muted>
+        <source src="rain.mp4" type="video/mp4">
+    </video>
+    <p class="md-typescale-body-medium">Typed WebM.(Wiew HTML Editor Key:F12)</p>
+    <video width="700px" controls autoplay muted>
+        <source src="rain.webm" type="video/webm">
+    </video>
+    <p class="md-typescale-body-medium">WebSited MP4.(Wiew HTML Editor. Key:F12)</p>
+    <a href="https://en.wikipedia.org/wiki/Rain">
+        <video width="700px" controls autoplay muted>
+            <source src="rain.mp4" type="video/mp4">
+        </video>
+    </a>
+</body>
+</html>

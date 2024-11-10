@@ -1,0 +1,13 @@
+body{
+    border: 4px dotted;
+    border-color: rgb(0, 136, 255);
+    display:flow-root;
+}
+#img1{
+    float: left;
+    margin-right: auto;
+}
+#img2{
+    float: right;
+    margin-left: auto;
+}
