@@ -3,7 +3,10 @@
 <html lang="auto"> 
 <head>
     <title>Finish</title>
+        <!-- Roboto Font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Import Map -->
         <script type="importmap">
         {
             "imports": {
@@ -11,6 +14,8 @@
             }
         }
         </script>
+
+        <!-- Typescale -->
         <script type="module">
             import '@material/web/all.js';
             import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
@@ -28,51 +33,103 @@
             console.error("Failed to load typography styles");
         }
     </script>
+
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="meta tags">
     <meta name="keywords" content="html, learning, beginner">
     <meta name="author" content="eb smr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Links -->
+    <link rel="icon" href="files/big-steve-face.jpg">
+
+    <!-- CSS in HTML -->
+    <style>
+.TopBar {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    height: 60px;
+    width: 1294998833334933px;
+    background-color: aliceblue;
+}
+
+.TopBarContent1 {
+    position: fixed;
+    left: 23px; /* Corrected: Added px unit */
+    top: 12px;  /* Corrected: Added px unit */
+}
+
+.TopBarContent2 {
+    position: fixed;
+    right: 23px; /* Corrected: Added px unit */
+    top: 12px;   /* Corrected: Added px unit */
+}
+.TopBarBottomDivider {
+    position: fixed;
+    top: 60px;   /* Corrected: Added px unit */
+}
+    </style>
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="TopBar">
+        <md-divider></md-divider>
+        <md-text-button href="index.html" class="TopBarContent1">Home</md-text-button>
+        <md-text-button href="files/aboutus.html" class="TopBarContent2">About Us</md-text-button>
+        <md-divider class="TopBarBottomDivider"></md-divider>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header -->
     <header style="background-color: aliceblue;">
+        <md-divider></md-divider>
         <h1 class="md-typescale-display-medium">Welcome to Many Mc Source Code</h1>
         <h4 class="md-typescale-body-medium">rewritten in Material Design 3</h4>
-        <a href="index.html" class="md-typescale-body-medium">Home (grove stret home at lest i das everything up.)</a><br>
+        <!-- <a href="index.html" class="md-typescale-body-medium">Home (grove stret home at lest i das everything up.)</a><br>
         <a href="" class="md-typescale-body-medium">Produtcs (Coming SOON!)</a><br>
         <a href="" class="md-typescale-body-medium">About Us</a><br>
-        <hr>
+        <hr> !-->
         <h4 class="md-typescale-body-medium"><b>HTML things</b></h4>
-        <a href="files/Basics.html" class="md-typescale-body-medium">HTML Basics</a><br>
-        <a href="files/mp3.html" class="md-typescale-body-medium">MP3</a><br>
-        <a href="files/img.html" class="md-typescale-body-medium">IMG</a><br>
-        <a href="files/ahref.html" class="md-typescale-body-medium">A href</a><br>
-        <a href="files/butttoflush.html" class="md-typescale-body-medium">Butt to Flush</a><br>
-        <a href="files/Form.html" class="md-typescale-body-medium">Forms</a><br>
-        <a href="files/list.html" class="md-typescale-body-medium">list</a><br>
-        <a href="files/favic.html" class="md-typescale-body-medium">favorite icons</a><br>
-        <a href="files/divspan.html" class="md-typescale-body-medium">Div & Span</a><br>
-        <a href="files/vid.html" class="md-typescale-body-medium">video</a><br>
-        <a href="files/Tables.html" class="md-typescale-body-medium">tables</a><br>
-        <a href="files/Text.html" class="md-typescale-body-medium">text</a><br>
-        <a href="css learn/fonts.html" class="md-typescale-body-medium">css learn fonts</a><br>
-        <a href="files/meta.html" class="md-typescale-body-medium">meta tags</a><br>
-        <a href="css learn/colors.html" class="md-typescale-body-medium">colors</a><br>
-        <a href="css learn/borders.html" class="md-typescale-body-medium">Borders</a><br>
-        <a href="css learn/shadows.html" class="md-typescale-body-medium">Shashdows</a><br>
-        <a href="css learn/M a r i g i n o.html" class="md-typescale-body-medium">Mariginino</a><br>
-        <a href="css learn/float.html" class="md-typescale-body-medium">Floats</a><br>
-        <a href="css learn/overFlow.html" class="md-typescale-body-medium">Overflows</a><br>
-        <hr>
+        <md-text-button href="files/Basics.html">HTML Basics</md-text-button><br>
+        <md-text-button href="files/mp3.html">MP3</md-text-button><br>
+        <md-text-button href="files/img.html">IMG</md-text-button><br>
+        <md-text-button href="files/ahref.html">A href</md-text-button><br>
+        <md-text-button href="files/butttoflush.html">Butt to Flush</md-text-button><br>
+        <md-text-button href="files/Form.html">Forms</md-text-button><br>
+        <md-text-button href="files/list.html">list</md-text-button><br>
+        <md-text-button href="files/favic.html">favorite icons</md-text-button><br>
+        <md-text-button href="files/divspan.html">Div & Span</md-text-button><br>
+        <md-text-button href="files/vid.html">video</md-text-button><br>
+        <md-text-button href="files/Tables.html">tables</md-text-button><br>
+        <md-text-button href="files/Text.html">text</md-text-button><br>
+        <md-text-button href="files/meta.html">meta tags</md-text-button><br>
+    </header>
+    <md-divider></md-divider>
+    <h4 class="md-typescale-body-medium">CSS things</h4>
+    <header style="background-color: aliceblue;">
+        <md-divider></md-divider>
+        <md-text-button href="css learn/fonts.html">Fonts</md-text-button><br>
+        <md-text-button href="css learn/colors.html">colors</md-text-button><br>
+        <md-text-button href="css learn/borders.html">Borders</md-text-button><br>
+        <md-text-button href="css learn/shadows.html">Shashdows</md-text-button><br>
+        <md-text-button href="css learn/M a r i g i n o.html">Mariginino</md-text-button><br>
+        <md-text-button href="css learn/float.html">Floats</md-text-button><br>
+        <md-text-button href="css learn/overFlow.html">Overflows</md-text-button><br>
+        <md-divider></md-divider>
     </header>
 
     <br>
-    <header>
-       <a href="examples_of_material_design/example.html" class="md-typescale-body-medium">Example of MD3</a><br> 
-    </header>
-
+    <md-filled-tonal-button href="examples_of_material_design/example.html">Example of MD3</md-filled-tonal-button><br> 
     <main>
         <h4 class="md-typescale-body-medium">cool moves</h4>
         <image src="files/big-steve-face.jpg" alt="my profile pic" height="100px"></image>
@@ -80,7 +137,7 @@
     </main>
 
     <footer style="background-color: aliceblue;" class="md-typescale-body-medium">
-        <hr>
+        <md-divider></md-divider>
         author: Many MC<br>
         &copy; copyright reseved<br>
         <small><a href="mailto:enessmr22@gmail.com" class="md-typescale-body-medium">enessmr22@gmail.com</a></small>
