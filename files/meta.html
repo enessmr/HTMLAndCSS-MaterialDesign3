@@ -2,14 +2,49 @@
 
 <html>
     <head>
-        <title>Meta= Menu energised tit a*bleep*</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="meta tags">
-        <meta name="keywords" content="html, learning, beginner">
-        <meta name="author" content="eb smr">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!-- Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <!-- Material Web Components -->
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        if (typescaleStyles?.styleSheet) {
+            document.adoptedStyleSheets = [typescaleStyles.styleSheet];
+        } else {
+            console.error("Failed to load typography styles");
+        }
+    </script>
+
+    <!-- Material Components Web -->
+    <script src="https://unpkg.com/@material/material-components-web@14.0.0/dist/material-components-web.min.js"></script>
+
+    <!-- Material Design CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@material/select@14/dist/mdc.select.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/list@14/dist/mdc.list.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/menu@14/dist/mdc.menu.css">
+
+    <!-- Meta Tags -->
+    <title>Meta tags</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="meta tags">
+    <meta name="keywords" content="html, learning, beginner">
+    <meta name="author" content="eb smr">
+
+    <!-- Links -->
+    <link rel="icon" href="files/big-steve-face.jpg">
     </head>
     <body>
     <h1 class="md-typescale-display-medium">HEllo META!!!</h1>
