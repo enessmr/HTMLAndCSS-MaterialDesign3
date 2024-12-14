@@ -5,10 +5,10 @@ Run the command  ```git clone https://github.com/enessmr/HTMLAndCSS-MaterialDesi
 
 then add things. I will publish the adds to "HTMLAndCSS-MD3-CommunityAddons"
 
-<a href="#How To Install Git?">1. How to install Git</a>
-<li><a href="#Git For ArchLinux">Git For ArchLinux</a></li>
-<li><a href="#Git For Debian">Git For Debian</a></li>
-<li><a href="#Git For Windows">Git For Windows</a></li>
+<a href="#How-To-Install-Git">1. How to install Git</a>
+<li><a href="#Git-For-ArchLinux">Git For ArchLinux</a></li>
+<li><a href="#Git-For-Debian">Git For Debian</a></li>
+<li><a href="#Git-For-Windows">Git For Windows</a></li>
 
 # How To Install Git?
 
