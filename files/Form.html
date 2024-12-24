@@ -117,7 +117,22 @@
             <option value="giftcard">giftcard</option>
             <option value="nopayment">no payment</option>
         </select> !-->
-        <br>
+            <br>
+            <md-outlined-select>
+                    <md-select-option selected value="nopayment">
+                            <div slot="headline">no payment</div>
+                    </md-select-option>
+                     <md-select-option value="visa">
+                            <div slot="headline">visa</div>
+                    </md-select-option>
+                    <md-select-option value="mastercard">
+                            <div slot="headline">mastercard</div>
+                    </md-select-option>
+                    <md-select-option value="giftcard">
+                            <div slot="headline">giftcard</div>
+                    </md-select-option>
+            </md-outlined-select>
+      <!--  <br>
         <br>
     <label for="visa" class="md-typescale-body-medium">Visa</label>
     <md-radio name="payment" value="visa">Visa</md-radio>
@@ -134,7 +149,9 @@
     <label for="nopayment" class="md-typescale-body-medium">No payment</label>
     <md-radio name="payment" value="nopayment" checked>No Payment</md-radio>
     <br>
-    <br>
+    <br> -->
+            <br>
+            <br>
 
         <md-outlined-text-field label="why ure signing up" max="999">
         </md-outlined-text-field>
