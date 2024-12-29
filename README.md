@@ -21,7 +21,7 @@ then add things. I will publish the adds to "HTMLAndCSS-MD3-CommunityAddons"
 # Git For Windows
 Download Git from it's website and install it like a normal user
 
-## WARN! I could archive this repo soon.
+## WARN! I could archive this repo soon. (i gib up this is invalid)
 
 ##                     STONKS
 [![Stargazers over time](https://starchart.cc/enessmr/HTMLAndCSS-MaterialDesign3.svg?variant=adaptive)](https://starchart.cc/enessmr/HTMLAndCSS-MaterialDesign3)
